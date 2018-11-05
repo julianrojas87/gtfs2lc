@@ -16,8 +16,8 @@ program
   .option('-s, --startDate <startDate>', 'startDate in YYYYMMDD format')
   .option('-e, --endDate <endDate>', 'endDate in YYYYMMDD format')
   .option('-b, --baseUris <baseUris>', 'path to a file containing the baseUris templates in json format')
-  .option('-fb, --fragmentBy <fragmentBy>', 'column name in stop_times.txt that determines fragmentation')
-  .option('-fi, --fragmentIndex <fragmentIndex>', 'path to a file containing the index that determines fragmentation')
+  .option('-F, --fragmentBy <fragmentBy>', 'column name in stop_times.txt that determines fragmentation')
+  .option('-i, --fragmentIndex <fragmentIndex>', 'path to a file containing the index that determines fragmentation')
   .option('-S, --store <store>', 'store type: LevelStore (uses your harddisk - for if you run out of RAM) or MemStore (default)')
   .arguments('<path>', 'Path to sorted GTFS files')
   .action(function (path) {
